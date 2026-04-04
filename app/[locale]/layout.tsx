@@ -1,8 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import "../globals.css";
 import { Header } from '../component/shared/header';
-
-
 export default async function LocaleLayout({
     children,
     params
@@ -11,16 +10,17 @@ export default async function LocaleLayout({
     params: Promise<{ locale: string }>;
 }) {
     const { locale } = await params;
-
-    // FIX: Pass the locale explicitly to getMessages
-    const messages = await getMessages({ locale }); 
+    const messages = await getMessages({ locale });
 
     return (
         <html lang={locale}>
             <body className="notranslate">
-                
+
                 <NextIntlClientProvider messages={messages} locale={locale}>
-                    {children}
+                    <Header />
+                    <main className="min-h-screen flex flex-col">
+                        {children}
+                    </main>
                 </NextIntlClientProvider>
             </body>
         </html>

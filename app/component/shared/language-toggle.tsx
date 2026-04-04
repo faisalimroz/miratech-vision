@@ -45,7 +45,6 @@ const handleLanguageChange = (newLocale: string) => {
           >
             <span className={cn(
               "text-sm",
-              // We check the raw window path for the active UI state
               (typeof window !== 'undefined' && window.location.pathname.startsWith(`/${lang.value}`)) 
                 ? "font-bold text-blue-600" 
                 : "text-foreground"
