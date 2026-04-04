@@ -1,0 +1,27 @@
+{
+  "HomePage": {
+    "title": "Document Management System",
+    "description": "The ultimate EDMS for modern teams."
+  },
+  "Auth": {
+    "login": "Login"
+  },
+  
+  "Navbar": {
+    "dashboard": "Dashboard",
+    "documents": "Documents",
+    "settings": "Settings"
+  },
+  "Index": {
+    "title": "Modern Document Management",
+    "description": "Securely store, manage, and share your business documents with our advanced EDMS solution.",
+    "getStarted": "Get Started",
+    "learnMore": "View Demo",
+    "features": {
+      "fast": { "title": "Fast Search", "desc": "Find any document in seconds with AI-powered indexing." },
+      "secure": { "title": "Enterprise Security", "desc": "Rest easy with bank-grade encryption and access controls." },
+      "easy": { "title": "Simple UI", "desc": "Clean and intuitive interface built for teams." }
+    }
+
+}
+}
