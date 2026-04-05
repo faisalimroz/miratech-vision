@@ -6,7 +6,6 @@ interface CounterSectionProps {
 }
 
 export default async function CounterSection({ locale }: CounterSectionProps) {
-  // Fetch translations from your JSON (Index > stats namespace)
   const t = await getTranslations({ locale, namespace: 'Index.stats' });
 
   const stats = [
@@ -16,7 +15,7 @@ export default async function CounterSection({ locale }: CounterSectionProps) {
   ];
 
   return (
-    <section className="w-full bg-[#E9EFF4] py-8 lg:py-20">
+    <section className="w-full bg-[#E9EFF4] py-10 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr,2fr] lg:gap-24 items-start">
           
@@ -32,7 +31,7 @@ export default async function CounterSection({ locale }: CounterSectionProps) {
           {/* RIGHT SIDE: Animated Grid */}
           <div className="grid grid-cols-3 gap-4 md:gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="flex flex-col border-t border-[#081521]/10 pl-6 lg:pl-10">
+              <div key={index} className="flex flex-col items-center border-t border-[#081521]/10 pl-6 lg:pl-10">
                  {/* Divider line above the numbers */}
              
                 
@@ -51,8 +50,8 @@ export default async function CounterSection({ locale }: CounterSectionProps) {
         </div>
 
         {/* BOTTOM: Large Brand Message from Image */}
-        <div className="mt-6 lg:mt-10">
-           <h2 className="text-[44px] md:text-[68px] lg:text-[84px] font-medium leading-[1.1] tracking-tight text-[#081521] max-w-[1100px]">
+        <div className="mt-10 lg:mt-24">
+           <h2 className="text-[44px] md:text-[48px] lg:text-[64px] font-medium leading-[1.1] tracking-tight text-[#081521] max-w-[1100px]">
              {t('heroMessage') || "Intuitive control in even the most complex environments."}
            </h2>
         </div>

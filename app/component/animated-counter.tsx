@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
 interface AnimatedCounterProps {
-  value: number; // Target number (Required)
-  suffix?: string; // Optional (e.g., "+")
-  duration?: number; // How long the animation takes
-  className?: string; // Tailwind styling
+  value: number;
+  suffix?: string; 
+  duration?: number; 
+  className?: string; 
 }
 
 export function AnimatedCounter({ 
@@ -19,8 +19,6 @@ export function AnimatedCounter({
 }: AnimatedCounterProps) {
   const [displayValue, setDisplayValue] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
-  
-  // Starts animation only when the user scrolls to this section
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   useEffect(() => {

@@ -26,11 +26,11 @@ export function Header() {
   const [mobileLangOpen, setMobileLangOpen] = React.useState(false)
 
   const navItems = [
-    { label: t("solutions"), href: "/solutions" },
-    { label: t("capabilities"), href: "/capabilities" },
-    { label: t("sectors"), href: "/sectors" },
-    { label: t("company"), href: "/company" },
-    { label: t("investorRelations"), href: "/investor-relations" },
+    { label: t("ceoIntroduction"), href: "/solutions" },
+    { label: t("overview"), href: "/overview" },
+    { label: t("products"), href: "/products" },
+    { label: t("services"), href: "/services" },
+    { label: t("support"), href: "/support" },
   ]
 
   const languages = [

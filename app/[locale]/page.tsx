@@ -4,6 +4,8 @@ import { Link } from '@/navigation';
 import HeroVideo from '../component/video';
 import { AnimatedCounter } from '../component/animated-counter';
 import CounterSection from '../component/shared/counter-section';
+import CEOSection from '../component/CeoSection';
+import OverviewSection from '../component/overview';
 
 // Force dynamic to ensure params are fresh
 export const dynamic = "force-dynamic";
@@ -20,9 +22,9 @@ export default async function HomePage(props: {
     <main className="flex flex-col items-center bg-[#0a1219] min-h-[calc(100vh-80px)] w-full">
       <HeroVideo locale={locale} />
       <CounterSection locale={locale} />
-
-      {/* Test translation rendering to ensure 't' is working */}
       <div className="hidden">{t('title')}</div>
+      <CEOSection locale={locale} />
+      <OverviewSection locale={locale} />
     </main>
   );
 }
