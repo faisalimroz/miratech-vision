@@ -80,8 +80,8 @@ export default async function OverviewSection({ locale }: { locale: string }) {
                                 className="object-contain"
                                 priority
                             />
-                            <div className="absolute -top-4 -right-4 w-12 h-12 border-t border-r border-[#f68b1f]/30 rounded-tr-3xl" />
-                            <div className="absolute -bottom-4 -left-4 w-12 h-12 border-b border-l border-[#f68b1f]/10 rounded-bl-3xl" />
+                            <div className="absolute -top-4 -right-4 w-12 h-12 border-t border-r border-[#f68b1f] rounded-tr-3xl" />
+                            <div className="absolute -bottom-4 -left-4 w-12 h-12 border-b border-l border-[#f68b1f] rounded-bl-3xl" />
                         </div>
                     </div>
                 </div>
