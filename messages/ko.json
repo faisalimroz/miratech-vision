@@ -10,10 +10,17 @@
     "login": "로그인"
   },
   "Index": {
+    "stats": {
+    "trustedBy": "전 세계 34개 이상의 정부 기관에서 신뢰합니다.",
+    "unitsSold": "판매된 단위",
+    "inCountryPartners": "국내 파트너",
+    "yearsOfInnovation": "혁신의 세월"
+  },
     "heroVideo": {
     "title": "안티 드론의 단순화",
     "content": "교육이 쉽고, 사용이 간편하며, 신속한 배치가 가능한 다목적 CUxS 솔루션입니다."
   },
+  
     "title": "현대적인 문서 관리 시스템",
     "description": "고급 EDMS 솔루션으로 비즈니스 문서를 안전하게 보관, 관리 및 공유하세요.",
     "getStarted": "시작하기"

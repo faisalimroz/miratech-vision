@@ -10,10 +10,17 @@
     "login": "Login"
   },
   "Index": {
+    "stats": {
+    "trustedBy": "Trusted by 34+ government agencies worldwide.",
+    "unitsSold": "Units Sold",
+    "inCountryPartners": "In-Country Partners",
+    "yearsOfInnovation": "Years of Innovation"
+  },
     "heroVideo": {
     "title": "Counter-Drone, Simplified",
     "content": "Easy to train, simple to use, quick to deploy, multi-mission CUxS solutions."
   },
+  
     "title": "Modern Drone Defense Systems",
     "description": "Securely manage your data...",
     "getStarted": "Get Started"
