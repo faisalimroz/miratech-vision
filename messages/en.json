@@ -10,6 +10,10 @@
     "login": "Login"
   },
   "Index": {
+    "heroVideo": {
+    "title": "Counter-Drone, Simplified",
+    "content": "Easy to train, simple to use, quick to deploy, multi-mission CUxS solutions."
+  },
     "title": "Modern Drone Defense Systems",
     "description": "Securely manage your data...",
     "getStarted": "Get Started"
