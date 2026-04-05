@@ -22,6 +22,21 @@
       "RF 회로설계 및 통신 시스템 설계(ADS SW) 컨설팅 전문가"
     ]
   },
+  "inquiry": {
+    "badge": "Support Center",
+    "title": "Technical Inquiry",
+    "description": "Common questions regarding our CUxS integration and defense protocols.",
+    "questions": {
+      "q1": "What is the maximum detection range of the system?",
+      "a1": "Our integrated RADAR and RF scanning suite can detect standard commercial drones at a range of up to 3km with an RCS of 0.01m².",
+      "q2": "Does GNSS Spoofing cause interference with civil aviation?",
+      "a2": "No. Our directional spoofing technology is precision-targeted to the threat's coordinates, minimizing signal leakage to authorized aircraft.",
+      "q3": "Can the system operate in extreme weather conditions?",
+      "a3": "Yes, the hardware is IP67 rated and tested for operational stability in temperatures ranging from -20°C to +60°C.",
+      "q4": "How does the system handle 'Dark Drones' (Radio Silent)?",
+      "a4": "Drones without RF emissions are identified using our EO/IR thermal imaging cameras and AI-driven optical tracking software."
+    }
+  },
    "stats": {
     "trustedBy": "Trusted by 34+ government agencies worldwide.",
     "unitsSold": "Units Sold",

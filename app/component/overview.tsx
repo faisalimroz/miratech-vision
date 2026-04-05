@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 export default async function OverviewSection({ locale }: { locale: string }) {
     const t = await getTranslations({ locale, namespace: 'Index.overview' });
-
     const operationsData = [
         {
             icon: <Target />,

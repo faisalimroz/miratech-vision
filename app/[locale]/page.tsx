@@ -1,13 +1,10 @@
 import { getTranslations } from 'next-intl/server';
-import { Button } from "@/components/ui/button";
-import { Link } from '@/navigation';
 import HeroVideo from '../component/video';
-import { AnimatedCounter } from '../component/animated-counter';
 import CounterSection from '../component/shared/counter-section';
 import CEOSection from '../component/CeoSection';
 import OverviewSection from '../component/overview';
+import InquirySection from '../component/inquiry';
 
-// Force dynamic to ensure params are fresh
 export const dynamic = "force-dynamic";
 
 export default async function HomePage(props: {
@@ -25,6 +22,7 @@ export default async function HomePage(props: {
       <div className="hidden">{t('title')}</div>
       <CEOSection locale={locale} />
       <OverviewSection locale={locale} />
+      <InquirySection locale={locale} />
     </main>
   );
 }
