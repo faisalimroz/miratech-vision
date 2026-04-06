@@ -12,82 +12,78 @@
   },
   "Index": {
     "ceo": {
-    "badge": "리더십",
-    "title": "대표이사 소개",
-    "description": "최첨단 안티드론 솔루션 및 RF 기술 혁신을 주도합니다.",
-    "milestones": [
-      "한국전력 신안성변전소 안티드론시스템 구축사업 총괄",
-      "한국석유공사 용인/여수지사 안티드론시스템(위성신호스푸퍼) 구축 총괄",
-      "안티드론 사업부 공공기관 및 방산 분야 영업 상무이사 역임",
-      "RF 회로설계 및 통신 시스템 설계(ADS SW) 컨설팅 전문가"
-    ]
-  },
-  "inquiry": {
-    "badge": "Support Center",
-    "title": "Technical Inquiry",
-    "description": "Common questions regarding our CUxS integration and defense protocols.",
-    "questions": {
-      "q1": "What is the maximum detection range of the system?",
-      "a1": "Our integrated RADAR and RF scanning suite can detect standard commercial drones at a range of up to 3km with an RCS of 0.01m².",
-      "q2": "Does GNSS Spoofing cause interference with civil aviation?",
-      "a2": "No. Our directional spoofing technology is precision-targeted to the threat's coordinates, minimizing signal leakage to authorized aircraft.",
-      "q3": "Can the system operate in extreme weather conditions?",
-      "a3": "Yes, the hardware is IP67 rated and tested for operational stability in temperatures ranging from -20°C to +60°C.",
-      "q4": "How does the system handle 'Dark Drones' (Radio Silent)?",
-      "a4": "Drones without RF emissions are identified using our EO/IR thermal imaging cameras and AI-driven optical tracking software."
-    }
-  },
-   "stats": {
-    "trustedBy": "Trusted by 34+ government agencies worldwide.",
-    "unitsSold": "Units Sold",
-    "inCountryPartners": "In-Country Partners",
-    "yearsOfInnovation": "Years of Innovation",
-    "heroMessage": "Intuitive control in even the most complex environments."
-  },
-  "business": {
-    "title": "Business Introduction",
-    "description": "Mirae Tech Vision specializes in specialized defense systems for the rapidly evolving drone landscape.",
-    "core_capabilities": {
-      "specialization": "Specializing in the development and supply of defense systems against rapidly increasing drones and UAVs.",
-      "software": "Providing integrated system SW for detection, identification, tracking, and neutralization.",
-      "spoofing": "State-of-the-art GNSS and communication spoofing solutions to minimize secondary damage.",
-      "partnerships": "Leading the market through technical alliances with top-tier domestic and international partners."
-    }
-  },
-"overview": {
-    "badge": "Operational Overview",
-    "title": "Integrated Anti-Drone Defense System",
-    "description": "Mirae Tech Vision delivers sophisticated, specialized defense systems to counter the rapidly evolving landscape of advanced drone and UAV threats.",
-    "tech": {
-      "platform": "The Mirae Tech Vision Anti-Drone Platform provides a unified Command & Control (SW) system, integrating RF Scanners, RADAR, EO/IR Cameras, GNSS Spoofers, RF Jammers, and Communications Spoofing technology.",
-      "stage1": {
-        "title": "Drone Detection",
-        "details": "Long-range detection (>3km, RCS 0.01m²) via RADAR & RF Scanners."
-      },
-      "stage2": {
-        "title": "Tracking & Monitoring",
-        "details": "Real-time 3D tracking using multi-sensor fusion (RADAR/RF/EOIR)."
-      },
-      "stage3": {
-        "title": "Drone Identification",
-        "details": "Optical classification via EOIR cameras and RF signal analysis."
-      },
-      "stage4": {
-        "title": "Drone Neutralization",
-        "details": "Active countermeasures: GNSS Spoofing, RF Jamming, and Communications Spoofing."
+      "badge": "Leadership",
+      "title": "CEO Introduction",
+      "description": "Driving innovation in state-of-the-art anti-drone solutions and RF technology.",
+      "milestones": [
+        "Led Anti-Drone System construction for KEPCO Shin-Anseong Substation.",
+        "Project Manager for GNSS Spoofer deployment at Korea National Oil Corporation.",
+        "Executive Director for Defense Industry & Public Sector Anti-Drone Sales.",
+        "Expert in RF Circuit Design and Communication System Engineering (ADS SW)."
+      ]
+    },
+    "inquiry": {
+      "badge": "Support Center",
+      "title": "Technical Inquiry",
+      "description": "Common questions regarding our CUxS integration and defense protocols.",
+      "questions": {
+        "q1": "What is the maximum detection range of the system?",
+        "a1": "Our integrated RADAR and RF scanning suite can detect standard commercial drones at a range of up to 3km with an RCS of 0.01m².",
+        "q2": "Does GNSS Spoofing cause interference with civil aviation?",
+        "a2": "No. Our directional spoofing technology is precision-targeted to the threat's coordinates, minimizing signal leakage to authorized aircraft.",
+        "q3": "Can the system operate in extreme weather conditions?",
+        "a3": "Yes, the hardware is IP67 rated and tested for operational stability in temperatures ranging from -20°C to +60°C.",
+        "q4": "How does the system handle 'Dark Drones' (Radio Silent)?",
+        "a4": "Drones without RF emissions are identified using our EO/IR thermal imaging cameras and AI-driven optical tracking software."
       }
-    }
-  },
+    },
+    "stats": {
+      "trustedBy": "Trusted by 34+ government agencies worldwide.",
+      "unitsSold": "Units Sold",
+      "inCountryPartners": "In-Country Partners",
+      "yearsOfInnovation": "Years of Innovation",
+      "heroMessage": "Intuitive control in even the most complex environments."
+    },
+    "overview": {
+      "badge": "Operational Overview",
+      "title": "Integrated Anti-Drone Defense System",
+      "description": "Mirae Tech Vision delivers sophisticated, specialized defense systems to counter the rapidly evolving landscape of advanced drone and UAV threats.",
+      "tech": {
+        "platform": "The Mirae Tech Vision Anti-Drone Platform provides a unified Command & Control (SW) system, integrating RF Scanners, RADAR, EO/IR Cameras, GNSS Spoofers, RF Jammers, and Communications Spoofing technology.",
+        "stage1": { "title": "Drone Detection", "details": "Long-range detection (>3km, RCS 0.01m²) via RADAR & RF Scanners." },
+        "stage2": { "title": "Tracking & Monitoring", "details": "Real-time 3D tracking using multi-sensor fusion (RADAR/RF/EOIR)." },
+        "stage3": { "title": "Drone Identification", "details": "Optical classification via EOIR cameras and RF signal analysis." },
+        "stage4": { "title": "Drone Neutralization", "details": "Active countermeasures: GNSS Spoofing, RF Jamming, and Communications Spoofing." }
+      }
+    },
     "heroVideo": {
-    "title": "Counter-Drone, Simplified",
-    "content": "Easy to train, simple to use, quick to deploy, multi-mission CUxS solutions."
-  },
-  
-    "title": "Modern Drone Defense Systems",
-    "description": "Securely manage your data...",
-    "getStarted": "Get Started"
+      "title": "Counter-Drone, Simplified",
+      "content": "Easy to train, simple to use, quick to deploy, multi-mission CUxS solutions."
+    }
   },
   "Auth": {
     "login": "Login"
+  },
+  "Products": {
+    "dronesentry-c2": {
+      "title": "DroneSentry-C2",
+      "category": "Command & Control",
+      "description": "Enterprise-level C2 software providing real-time multi-sensor fusion and autonomous threat disruption."
+    },
+    "rfpatrol-mk2": {
+      "title": "RfPatrol MK2",
+      "category": "Wearable Detection",
+      "description": "A highly automated wearable drone detection device providing users with real-time situational awareness."
+    },
+    "dronecannon-rf": {
+      "title": "DroneCannon RF",
+      "category": "Countermeasures",
+      "description": "Directional RF jammer designed for stationary disruption of drone signals in complex environments."
+    },
+    "dronegun-tactical": {
+      "title": "DroneGun Tactical",
+      "category": "Handheld Defeat",
+      "description": "High-performance handheld UAS countermeasure providing a safe and effective defeat capability."
+    }
   }
 }

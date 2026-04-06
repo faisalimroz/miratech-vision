@@ -23,7 +23,7 @@ export default async function InquirySection({ locale }: { locale: string }) {
 
                 {/* Header Block */}
                 <div className="flex flex-col items-center text-center mb-12">
-                    <div className="inline-flex items-center border border-[#f68b1f] gap-2 px-3 py-1 rounded-full bg-[#f68b1f]/10 mb-4">
+                    <div className="inline-flex items-center border border-[#f68b1f] gap-2 px-3 py-1 rounded-full bg-[#E9EFF4] mb-4">
                         <HelpCircle className="w-3.5 h-3.5 text-[#f68b1f]" />
                         <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#f68b1f]">
                             {t('badge')}
