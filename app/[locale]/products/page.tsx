@@ -1,6 +1,7 @@
-import ProductCard from '@/app/component/products/product-card';
 import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
+import ProductCard from '@/app/component/products/product-card';
+
 
 export default async function ProductsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

@@ -79,11 +79,7 @@
       "title": "DroneCannon RF",
       "category": "Countermeasures",
       "description": "Directional RF jammer designed for stationary disruption of drone signals in complex environments."
-    },
-    "dronegun-tactical": {
-      "title": "DroneGun Tactical",
-      "category": "Handheld Defeat",
-      "description": "High-performance handheld UAS countermeasure providing a safe and effective defeat capability."
     }
+   
   }
 }

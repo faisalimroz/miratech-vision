@@ -5,6 +5,7 @@ import CEOSection from '../component/CeoSection';
 import OverviewSection from '../component/overview';
 import InquirySection from '../component/inquiry';
 import ServicesBanner from '../component/services';
+import SoftwareSection from '../component/products/product-hero';
 
 export const dynamic = "force-dynamic";
 
@@ -19,6 +20,7 @@ export default async function HomePage(props: {
   return (
     <main className="flex flex-col items-center bg-[#0a1219] min-h-[calc(100vh-80px)] w-full">
       <HeroVideo locale={locale} />
+      <SoftwareSection />
       <CounterSection locale={locale} />
       <div className="hidden">{t('title')}</div>
       <CEOSection locale={locale} />

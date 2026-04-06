@@ -1,4 +1,4 @@
-'use client';   // ← Make sure this is at the top
+'use client';  
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -18,8 +18,8 @@ export default function ProductCard({ slug, image }: ProductCardProps) {
       href={`/products/${slug}`} 
       className="group relative flex flex-col bg-white border border-slate-200 rounded-sm overflow-hidden transition-all duration-500 hover:shadow-2xl hover:border-[#f68b1f]/30"
     >
-      {/* Product Image Container */}
-      <div className="relative aspect-[4/5] w-full overflow-hidden bg-slate-100">
+    
+      <div className="relative aspect-[5/5] w-full overflow-hidden bg-slate-100">
         <Image
           src={image}
           alt={t(`${slug}.title`)}

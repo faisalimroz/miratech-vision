@@ -42,7 +42,7 @@ export default async function ProductDetailsPage({
               <ChevronRight className="w-3 h-3" />
               <span>{t('category')}</span>
             </div>
-            <h1 className="text-6xl lg:text-8xl font-black tracking-tighter mb-4">
+            <h1 className="text-6xl lg:text-8xl font-black uppercase tracking-tighter mb-4">
               {t('title')}
             </h1>
             <p className="max-w-2xl text-xl text-white/70 font-light leading-relaxed">
