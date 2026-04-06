@@ -89,7 +89,7 @@ export function LanguageToggle({ mobile = false }: LanguageToggleProps) {
         type="button"
         variant="ghost"
         size="sm"
-        className="group/trigger flex h-10 items-center gap-2 px-2 transition-all hover:bg-white/5 focus-visible:ring-0"
+        className="group/trigger cursor-pointer flex h-10 items-center gap-2 px-2 transition-all hover:bg-white/5 focus-visible:ring-0"
       >
         <Globe className="h-[18px] w-[18px] text-white/80 transition-colors group-hover/trigger:text-white" />
 
@@ -116,7 +116,7 @@ export function LanguageToggle({ mobile = false }: LanguageToggleProps) {
               type="button"
               onClick={() => handleLanguageChange(lang.value)}
               className={cn(
-                "flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left transition-colors hover:bg-white/10",
+                "flex w-full items-center justify-between cursor-pointer rounded-lg px-3 py-2.5 text-left transition-colors hover:bg-white/10",
                 isSelected && "bg-white/5"
               )}
             >

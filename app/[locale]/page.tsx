@@ -4,6 +4,7 @@ import CounterSection from '../component/shared/counter-section';
 import CEOSection from '../component/CeoSection';
 import OverviewSection from '../component/overview';
 import InquirySection from '../component/inquiry';
+import ServicesBanner from '../component/services';
 
 export const dynamic = "force-dynamic";
 
@@ -21,8 +22,10 @@ export default async function HomePage(props: {
       <CounterSection locale={locale} />
       <div className="hidden">{t('title')}</div>
       <CEOSection locale={locale} />
+      
       <OverviewSection locale={locale} />
       <InquirySection locale={locale} />
+      <ServicesBanner></ServicesBanner>
     </main>
   );
 }
