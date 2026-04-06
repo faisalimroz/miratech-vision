@@ -19,7 +19,7 @@ export default function SoftwareSection() {
   ];
 
   return (
-    <section className="relative w-full min-h-[700px] flex items-center overflow-hidden">
+    <section className="relative w-full min-h-[700px] xl:h-[950px] flex items-center overflow-hidden">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -30,7 +30,7 @@ export default function SoftwareSection() {
           priority
         />
         {/* Dark Gradient to make text pop */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#081521]/30 via-[#081521]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#081521]/30 via-[#081521]/30 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
