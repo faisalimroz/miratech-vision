@@ -28,7 +28,7 @@ export default async function OverviewSection({ locale }: { locale: string }) {
     ];
 
     return (
-        <section className="w-full bg-[#0a1219] py-12 lg:py-24 border-t border-white/5 overflow-hidden">
+        <section id='overview' className="w-full bg-[#0a1219] py-12 lg:py-24 border-t border-white/5 overflow-hidden">
             <div className="mx-auto max-w-[1440px] px-6 lg:px-12">
                 {/* Header Section */}
                 <div className="flex flex-col items-center text-center mb-6 lg:mb-12">

@@ -17,15 +17,26 @@ export default async function HomePage(props: {
     locale,
     namespace: 'Index'
   });
+  const sections = [
+    { id: "hero", component: <HeroVideo locale={locale} /> },
+    { id: "stats", component: <CounterSection locale={locale} /> },
+    { id: "products", component: <SoftwareSection /> },
+    { id: "ceo", component: <CEOSection locale={locale} /> },
+    { id: "overview", component: <OverviewSection locale={locale} /> },
+    { id: "support", component: <InquirySection locale={locale} /> },
+    { id: "services", component: <ServicesBanner  /> },
+  ]
   return (
-    <main className="flex flex-col items-center bg-[#0a1219] min-h-[calc(100vh-80px)] w-full">
-      <HeroVideo locale={locale} />
-      <CounterSection locale={locale} />
-      <SoftwareSection />
-      <CEOSection locale={locale} />
-      <OverviewSection locale={locale} />
-      <InquirySection locale={locale} />
-      <ServicesBanner></ServicesBanner>
-    </main>
+   <main className="flex flex-col items-center bg-[#0a1219] min-h-[calc(100vh-80px)] w-full">
+  {sections.map((section) => (
+    <section
+      key={section.id}
+      id={section.id}
+      className="w-full scroll-mt-[76px]"
+    >
+      {section.component}
+    </section>
+  ))}
+</main>
   );
 }

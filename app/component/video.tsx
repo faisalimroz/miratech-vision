@@ -5,7 +5,7 @@ export default async function HeroVideo({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: 'Index.heroVideo' });
 
   return (
-    <section className="relative h-[110vh] w-full overflow-hidden bg-[#0a1219]">
+    <section id='hero' className="relative h-[110vh] w-full overflow-hidden bg-[#0a1219]">
  
       <BackgroundVideo src="/video/video.mp4" />
 

@@ -12,7 +12,7 @@ export default async function CEOSection({ locale }: { locale: string }) {
     ];
 
     return (
-        <section className="w-full bg-[#0a1219] py-24 lg:py-32 border-t border-white/5">
+        <section id='ceo' className="w-full bg-[#0a1219] py-24 lg:py-32 border-t border-white/5">
             <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
                 <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
 

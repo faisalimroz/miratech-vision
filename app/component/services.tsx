@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ServicesFullImage() {
     return (
-        <section className="relative w-full min-h-screen bg-[#0a1219] overflow-hidden">
+        <section id="services" className="relative w-full min-h-screen bg-[#0a1219] overflow-hidden">
             {/* Background layers */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(246,139,31,0.12),transparent_35%)] pointer-events-none" />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,18,25,0.9)_0%,rgba(10,18,25,1)_100%)] pointer-events-none" />

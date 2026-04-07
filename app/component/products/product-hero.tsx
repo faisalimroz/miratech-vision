@@ -19,7 +19,7 @@ export default function SoftwareSection() {
   ];
 
   return (
-    <section className="relative w-full min-h-[700px] xl:h-[950px] flex items-center overflow-hidden">
+    <section  id="products" className="relative w-full min-h-[700px] xl:h-[950px] flex items-center overflow-hidden">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <Image

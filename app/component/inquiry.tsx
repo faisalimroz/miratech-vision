@@ -18,7 +18,7 @@ export default async function InquirySection({ locale }: { locale: string }) {
     ];
 
     return (
-        <section className="w-full bg-[#E9EFF4] py-12 lg:py-18 border-t border-slate-100">
+        <section id='support' className="w-full bg-[#E9EFF4] py-12 lg:py-18 border-t border-slate-100">
             <div className="mx-auto max-w-4xl px-6">
 
                 {/* Header Block */}

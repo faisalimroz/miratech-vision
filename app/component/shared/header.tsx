@@ -25,14 +25,13 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
   const [mobileLangOpen, setMobileLangOpen] = React.useState(false)
 
-  const navItems = [
-    { label: t("ceoIntroduction"), href: "/solutions" },
-    { label: t("overview"), href: "/overview" },
-    { label: t("products"), href: "/products" },
-    { label: t("services"), href: "/services" },
-    { label: t("support"), href: "/support" },
-  ]
-
+const navItems = [
+  { label: t("ceoIntroduction"), href: "#ceo" },
+  { label: t("overview"), href: "#overview" },
+  { label: t("products"), href: "#products" },
+  { label: t("services"), href: "#services" },
+  { label: t("support"), href: "#support" },
+]
   const languages = [
     { label: "한국어", value: "ko" },
     { label: "English", value: "en" },
@@ -90,7 +89,7 @@ export function Header() {
                 const isActive = pathname === item.href
 
                 return (
-                  <Link
+                  <a
                     key={item.href}
                     href={item.href}
                     className={cn(
@@ -102,7 +101,7 @@ export function Header() {
                     {isActive && (
                       <span className="absolute inset-x-0 bottom-0 h-[2px] bg-[#f68b1f]" />
                     )}
-                  </Link>
+                  </a>
                 )
               })}
             </div>
@@ -200,7 +199,7 @@ export function Header() {
                 const isActive = pathname === item.href
 
                 return (
-                  <Link
+                  <a
                     key={item.href}
                     href={item.href}
                     onClick={closeMobileMenu}
@@ -211,7 +210,7 @@ export function Header() {
                   >
                     <span>{item.label}</span>
                     <ChevronRight className="h-5 w-5 text-white/45" />
-                  </Link>
+                  </a>
                 )
               })}
             </div>
