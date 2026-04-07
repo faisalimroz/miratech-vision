@@ -22,10 +22,7 @@ export default async function HomePage(props: {
       <HeroVideo locale={locale} />
       <CounterSection locale={locale} />
       <SoftwareSection />
-      
-      <div className="hidden">{t('title')}</div>
       <CEOSection locale={locale} />
-      
       <OverviewSection locale={locale} />
       <InquirySection locale={locale} />
       <ServicesBanner></ServicesBanner>

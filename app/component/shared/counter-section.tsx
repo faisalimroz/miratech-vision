@@ -4,10 +4,8 @@ import { AnimatedCounter } from "../animated-counter";
 interface CounterSectionProps {
   locale: string;
 }
-
 export default async function CounterSection({ locale }: CounterSectionProps) {
   const t = await getTranslations({ locale, namespace: 'Index.stats' });
-
   const stats = [
     { number: 4000, label: t('unitsSold'), suffix: "+" },
     { number: 74, label: t('inCountryPartners'), suffix: "" },
@@ -19,26 +17,19 @@ export default async function CounterSection({ locale }: CounterSectionProps) {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr,2fr] lg:gap-24 items-start">
           
-          {/* LEFT SIDE: Trusted By Text */}
-          <div className="max-w-[380px]">
-             {/* Divider line matches the DroneShield design */}
-            
+   
+          <div className="max-w-[380px]">           
             <p className="text-[18px] font-medium leading-relaxed text-[#081521]/70">
               {t('trustedBy')}
             </p>
           </div>
-
-          {/* RIGHT SIDE: Animated Grid */}
           <div className="grid grid-cols-3 gap-4 md:gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="flex flex-col items-center border-t border-[#081521]/10 pl-6 lg:pl-10">
-                 {/* Divider line above the numbers */}
-             
-                
+              <div key={index} className="flex flex-col items-center border-t border-[#081521]/10 pl-6 lg:pl-10">              
                 <AnimatedCounter
                   value={stat.number}
                   suffix={stat.suffix}
-                  className="text-[32px] md:text-[56px] font-black tracking-tight text-[#081521] leading-none"
+                  className="text-[32px] md:text-[56px] mt-3 font-black tracking-tight text-[#081521] leading-none"
                 />
                 
                 <p className="mt-5 text-[16px] font-bold uppercase tracking-[0.15em] text-[#f68b1f]">
@@ -48,8 +39,6 @@ export default async function CounterSection({ locale }: CounterSectionProps) {
             ))}
           </div>
         </div>
-
-        {/* BOTTOM: Large Brand Message from Image */}
         <div className="mt-10 lg:mt-24">
            <h2 className="text-[44px] md:text-[48px] lg:text-[64px] font-medium leading-[1.1] tracking-tight text-[#081521] max-w-[1100px]">
              {t('heroMessage') || "Intuitive control in even the most complex environments."}

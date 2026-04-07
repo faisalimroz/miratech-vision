@@ -32,20 +32,20 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   const messages = await getMessages({ locale });
+
   const activeFontFamily = locale === "ko" ? noto.className : inter.className;
 
   return (
     <html 
-      lang={locale} 
+      lang={locale}
       className={cn(mono.variable, inter.variable, noto.variable)}
       suppressHydrationWarning
     >
       <body
         className={cn(
-          "min-h-screen flex flex-col antialiased bg-[#0a1219] text-white suppressHydrationWarning",
-          activeFontFamily, 
+          "min-h-screen flex flex-col antialiased bg-[#0a1219] text-white",
+          activeFontFamily, // Applying Inter or Noto Sans KR here
           "notranslate", 
-        
           locale === "ko" ? "tracking-tight" : "tracking-normal"
         )}
       >
