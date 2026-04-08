@@ -3,6 +3,7 @@ import { Target, Zap, ShieldAlert, Cpu } from "lucide-react";
 import Image from 'next/image'; 
 
 export default async function OverviewSection({ locale }: { locale: string }) {
+    const diagramSrc = locale === 'ko' ? '/overview-ko.png' : '/overview-en.png';
     const t = await getTranslations({ locale, namespace: 'Index.overview' });
     const operationsData = [
         {
@@ -74,7 +75,7 @@ export default async function OverviewSection({ locale }: { locale: string }) {
                     <div className="lg:col-span-6 flex items-center justify-center">
                         <div className="relative w-full max-w-[650px] aspect-square lg:aspect-auto lg:h-[550px] flex items-center justify-center">
                             <Image
-                                src="/overview.png"
+                                src="/pics.png"
                                 alt="Integrated Anti-Drone Defense System"
                                 fill
                                 className="object-contain"

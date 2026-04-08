@@ -64,23 +64,40 @@
   "Auth": {
     "login": "Login"
   },
-  "Products": {
-    "dronesentry-c2": {
-      "title": "DroneSentry-C2",
-      "category": "Command & Control",
-      "description": "Enterprise-level C2 software providing real-time multi-sensor fusion and autonomous threat disruption."
-    },
-    "rfpatrol-mk2": {
-      "title": "RfPatrol MK2",
-      "category": "Wearable Detection",
-      "description": "A highly automated wearable drone detection device providing users with real-time situational awareness."
-    },
-    "dronecannon-rf": {
-      "title": "DroneCannon RF",
-      "category": "Countermeasures",
-      "description": "Directional RF jammer designed for stationary disruption of drone signals in complex environments."
+
+ "Products": {
+    "detection-system": {
+      "main_title": "Integrated Detection & Identification System",
+      "components": {
+        "sdr-scanner": {
+          "title": "RF Scanner (SDR)",
+          "image": "/products/sdr-unit.webp",
+          "specs": {
+            "Frequency": "400MHz - 6GHz",
+            "Range": "3km+",
+            "Updates": "Bi-Annual Library"
+          }
+        },
+        "surveillance-radar": {
+          "title": "Surveillance Radar",
+          "image": "/products/radar-unit.webp",
+          "specs": {
+            "Coverage": "360° Omnidirectional",
+            "Sensitivity": "RCS 0.01m²",
+            "Detection": "3.5km (Track 6km)"
+          }
+        },
+        "eoir-camera": {
+          "title": "EO/IR Camera",
+          "image": "/products/eoir-unit.webp",
+          "specs": {
+            "Visual_Range": "2km",
+            "AI_Logic": "Deep Learning ID",
+            "Tracking": "Auto Path Prediction"
+          }
+        }
+      }
     }
-   
   },
   "NotFound": {
     "title": "404 - Page Not Found",

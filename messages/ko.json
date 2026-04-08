@@ -64,28 +64,37 @@
   "Auth": {
     "login": "로그인"
   },
+
+
   "Products": {
-    "dronesentry-c2": {
-      "title": "드론센트리-C2",
-      "category": "지휘 및 통제",
-      "description": "실시간 다중 센서 융합 및 자율적 위협 차단을 제공하는 엔터프라이즈급 C2 소프트웨어입니다."
-    },
-    "rfpatrol-mk2": {
-      "title": "Rf패트롤 MK2",
-      "category": "웨어러블 탐지",
-      "description": "사용자에게 실시간 상황 인식을 제공하는 고도로 자동화된 휴대용 드론 탐지 장치입니다."
-    },
-    "dronecannon-rf": {
-      "title": "드론캐논 RF",
-      "category": "무력화 솔루션",
-      "description": "복잡한 환경에서 드론 신호를 고정적으로 차단하도록 설계된 지향성 RF 재머입니다."
-    },
-    "dronegun-tactical": {
-      "title": "드론건 택티컬",
-      "category": "핸드헬드 대응",
-      "description": "안전하고 효과적인 무력화 기능을 제공하는 고성능 핸드헬드 UAS 대응 장비입니다."
+    "sdr-sentinel-v3": {
+      "title": "SDR 센티넬 V3",
+      "category": "신호 인텔리전스",
+      "description": "실시간 프로토콜 해독 및 자율적 위협 식별을 위한 엔터프라이즈급 SDR 플랫폼입니다.",
+      "features": {
+        "f1_title": "방어 프로토콜",
+        "f1_desc": "군용 등급 암호화 및 자율 대응 로직이 통합되었습니다.",
+        "f2_title": "정밀 추적",
+        "f2_desc": "위협을 구분하기 위한 고급 RF 시그니처 분석을 활용합니다.",
+        "f3_title": "신속한 배치",
+        "f3_desc": "300초 이내에 보안 구역을 설정할 수 있는 제로 구성 설정입니다."
+      },
+      "spec_labels": {
+        "range": "운용 반경",
+        "freq": "주파수 대역",
+        "update": "라이브러리 업데이트",
+        "power": "전원 입력"
+      },
+      "specs": {
+        "range": "3km 이상",
+        "freq": "400MHz - 6GHz",
+        "update": "연 2회",
+        "power": "24V DC"
+      }
     }
-  },
+  }
+
+,
   "NotFound": {
     "title": "404 - 페이지를 찾을 수 없습니다",
     "message": "요청하신 제품이나 페이지가 존재하지 않습니다.",
