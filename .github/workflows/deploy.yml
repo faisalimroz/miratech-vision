@@ -1,0 +1,35 @@
+name: Deploy React to VPS
+
+on:
+  push:
+    branches:
+      - main  # Trigger only when pushing to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4  # Note: ensure this is setup-node, not checkout
+        with:
+          node-version: '22'
+
+      - name: Install dependencies and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to VPS via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: 103.161.47.8
+          username: root
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: 22
+          source: "build/*"
+          target: "/var/www/html"
+          strip_components: 1 # This prevents it from creating a /build/ folder inside /html/
