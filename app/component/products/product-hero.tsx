@@ -18,7 +18,7 @@ export default function SoftwareSection() {
       icon: Zap
     },
     {
-      id: 'normalization-equipment',
+      id: 'spoofing-equipment',
       icon: Shield
     },
   ];

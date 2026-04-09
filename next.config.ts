@@ -1,10 +1,13 @@
-// next.config.ts
+import type { NextConfig } from 'next'; // Import the type
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin(
-  './i18n.ts' // Points to the i18n.ts file in your image
-);
+const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
-const nextConfig = {};
+const nextConfig: NextConfig = { // Explicitly type the config
+
+  images: {
+    unoptimized: true, // Usually required for static exports
+  },
+};
 
 export default withNextIntl(nextConfig);

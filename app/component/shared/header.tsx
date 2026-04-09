@@ -114,7 +114,7 @@ const navItems = [
               variant="outline"
               className="hidden h-14 rounded-full border-[#f68b1f] bg-transparent px-7 text-[14px] font-semibold tracking-[0.05em] text-[#f68b1f] hover:bg-[#f68b1f] hover:text-[#081521] lg:inline-flex"
             >
-              <Link href="/contact">{t("connectWithUs")}</Link>
+              <Link href="#contact-us">{t("connectWithUs")}</Link>
             </Button>
 
             {/* Mobile Navigation Trigger */}
@@ -166,13 +166,11 @@ const navItems = [
         >
           {/* Top bar */}
           <div className="flex items-center justify-between border-b border-white/15 px-6 py-5">
-            <Link href="/" className="flex items-center gap-3" onClick={closeMobileMenu}>
-              <div className="flex h-8 w-8 items-center italic justify-center rounded-[3px] bg-[#f68b1f]">
-                
-              </div>
+            <Link href="#contact-us" className="flex items-center gap-3" onClick={closeMobileMenu}>
+             
 
               <span className="text-[15px] font-semibold uppercase tracking-[0.08em] text-[#f68b1f]">
-                DRONESHIELD
+                    {t('logo')}
               </span>
             </Link>
 

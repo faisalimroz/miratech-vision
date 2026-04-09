@@ -69,19 +69,92 @@
 "Products": {
   "header": "Our Drone Solutions",
     "description": "Explore our comprehensive range of cutting-edge anti-drone products, designed to provide robust defense against evolving aerial threats. ",
-    "detection-identification-equipment": {
-      "title": "Detection / Identification Equipment"
+ "detection-identification-equipment": {
+      "title": "Detection & Identification",
+      "main_title": "Multi-Layer Surveillance Ecosystem",
+      "component_list": [
+        {
+          "id": "sdr-scanner",
+          "title": "SDR Based Detection",
+          "image": "/product/six.png",
+          "label1": "Frequency", "val1": "400MHz - 6GHz",
+          "label2": "Updates", "val2": "Bi-Annual Library"
+        },
+        {
+          "id": "surveillance-radar",
+          "title": "360° Precision Radar",
+          "image": "/product/seven.png",
+          "label1": "Detection", "val1": "3.5km (Track 6km)",
+          "label2": "Sensitivity", "val2": "RCS 0.01m²"
+        },
+        {
+          "id": "eoir-camera",
+          "title": "EO/IR Thermal Optics",
+          "image": "/product/eight.png",
+          "label1": "Visual ID", "val1": "2km Range",
+          "label2": "AI Logic", "val2": "Deep Learning ID"
+        }
+      ]
     },
     "neutralization-equipment": {
-      "title": "Neutralization Equipment"
+      "title": "Neutralization System",
+      "main_title": "Active Defense & Countermeasures",
+      "component_list": [
+        {
+          "id": "gnss-spoofer",
+          "title": "Satellite Spoofing",
+          "image": "/product/nine.png",
+          "label1": "Output", "val1": "200mW (GNSS L1)",
+          "label2": "Protection", "val2": "1,000m+ Radius"
+        },
+        {
+          "id": "rf-jammer",
+          "title": "Wideband Jammer",
+          "image": "/product/ten.png",
+          "label1": "Distance", "val1": "2km Coverage",
+          "label2": "Power", "val2": "300W Max"
+        }
+      ]
     },
-    "normalization-equipment": {
-      "title": "Normalization Equipment"
+    "spoofing-equipment": {
+      "title": "Spoofing Equipment",
+      "main_title": "Advanced Cyber Takeover & Directional Control",
+      "component_list": [
+        {
+          "id": "cyber-takeover",
+          "title": "Cyber Takeover System",
+          "image": "/product/eleven.webp",
+          "label1": "Method", "val1": "Non-Jamming / Non-Kinetic",
+          "label2": "Capability", "val2": "No Line-of-Sight Required"
+        },
+        {
+          "id": "precision-spoofing",
+          "title": "Precision Spoofing System",
+          "image": "/product/eleven.webp",
+          "label1": "Function", "val1": "Satellite Signal Control",
+          "label2": "Safety", "val2": "Forced Landing in Safe Zone"
+        },
+        {
+          "id": "radio-takeover",
+          "title": "RF Communication Spoofer",
+          "image": "/product/eleven.webp",
+          "label1": "Target", "val1": "Commercial Drone Frequencies",
+          "label2": "Action", "val2": "Detect, Track & Neutralize"
+        }
+      ]
     }
-  },
+    }
+  ,
   "NotFound": {
     "title": "404 - Page Not Found",
     "message": "The product or page you are looking for does not exist.",
     "button": "Return Home"
+  },
+  "Contact": {
+    "badge": "Customer Support Hub",
+    "line_label": "Direct Operations Line",
+    "phone": "010.3737.5216",
+    "hours": "09:00 AM - 18:00 PM",
+    "status": "Live Support Active"
   }
 }

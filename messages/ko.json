@@ -69,14 +69,74 @@
 "Products": {
   "header": "우리의 드론 솔루션",
     "description": "최첨단 안티드론 제품의 종합적인 라인업을 살펴보세요. 진화하는 공중 위협으로부터 강력한 방어를 제공하도록 설계되었습니다.",
-    "detection-identification-equipment": {
-      "title": "탐지 및 식별 장비"
+   "detection-identification-equipment": {
+      "title": "탐지 및 식별 장비",
+      "main_title": "다계층 감시 에코시스템",
+      "components": {
+        "sdr-scanner": {
+          "title": "SDR 기반 탐지 장비",
+          "spec1_label": "주파수 대역", "spec1_val": "400MHz - 6GHz",
+          "spec2_label": "업데이트", "spec2_val": "연간 2회 라이브러리"
+        },
+        "surveillance-radar": {
+          "title": "360° 정밀 레이더",
+          "spec1_label": "탐지거리", "spec1_val": "3.5km (추적 6km)",
+          "spec2_label": "민감도", "spec2_val": "RCS 0.01m²"
+        },
+        "eoir-camera": {
+          "title": "EO/IR 광학 카메라",
+          "spec1_label": "식별거리", "spec1_val": "2km",
+          "spec2_label": "AI 알고리즘", "spec2_val": "딥러닝 비행체 식별"
+        }
+      }
     },
     "neutralization-equipment": {
-      "title": "드론 무력화 장비"
+      "title": "무력화 시스템",
+      "main_title": "능동 방어 및 대응 체계",
+      "components": {
+        "gnss-spoofer": {
+          "title": "위성신호 스푸핑",
+          "spec1_label": "출력", "spec1_val": "200mW (GNSS L1)",
+          "spec2_label": "보호반경", "spec2_val": "1,000m 이상"
+        },
+        "rf-jammer": {
+          "title": "광대역 재머",
+          "spec1_label": "차단거리", "spec1_val": "2km",
+          "spec2_label": "방사출력", "spec2_val": "최대 300W"
+        },
+        "multi-band-system": {
+          "title": "항재밍 방어 체계",
+          "spec1_label": "주파수", "spec1_val": "433Mhz / 2.4 / 5.8Ghz",
+          "spec2_label": "추적방어", "spec2_val": "24시간 다수 침입 방어"
+        }
+      }
     },
-    "normalization-equipment": {
-      "title": "드론 정상화 장비"
+    "spoofing-equipment": {
+      "title": "스푸핑 장비",
+      "main_title": "최첨단 사이버 테이크오버 및 정밀 방향 유도",
+      "component_list": [
+        {
+          "id": "cyber-takeover",
+          "title": "사이버 테이크오버 시스템",
+          "image": "/product/eleven.webp",
+          "label1": "차별성", "val1": "비방향성 / 비물리적 무력화",
+          "label2": "특징", "val2": "비가시권(NLOS) 대응 가능"
+        },
+        {
+          "id": "precision-spoofing",
+          "title": "정밀 방향 유도 스푸핑",
+          "image": "/product/eleven.webp",
+          "label1": "기능", "val1": "위성 신호 정밀 제어",
+          "label2": "안전", "val2": "안전지역 강제 유도 착륙"
+        },
+        {
+          "id": "radio-takeover",
+          "title": "통신 스푸퍼 (RF)",
+          "image": "/product/eleven.webp",
+          "label1": "대상", "val1": "상용 드론 라디오 주파수",
+          "label2": "단계", "val2": "탐지, 추적, 식별 및 무력화"
+        }
+      ]
     }
   }
 
@@ -85,5 +145,12 @@
     "title": "404 - 페이지를 찾을 수 없습니다",
     "message": "요청하신 제품이나 페이지가 존재하지 않습니다.",
     "button": "홈으로 돌아가기"
+  },
+  "Contact": {
+    "badge": "고객 지원 센터",
+    "line_label": "직통 운영 라인",
+    "phone": "010.3737.5216",
+    "hours": "오전 09:00 - 오후 18:00",
+    "status": "실시간 상담 가능"
   }
 }

@@ -6,6 +6,7 @@ import OverviewSection from '../component/overview';
 import InquirySection from '../component/inquiry';
 import ServicesBanner from '../component/services';
 import SoftwareSection from '../component/products/product-hero';
+import CustomerCenter from '../component/customerCenter';
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +25,7 @@ export default async function HomePage(props: {
     { id: "ceo", component: <CEOSection locale={locale} /> },
     { id: "overview", component: <OverviewSection locale={locale} /> },
     { id: "support", component: <InquirySection locale={locale} /> },
+    { id: "contact-us", component: <CustomerCenter /> },
     { id: "services", component: <ServicesBanner  /> },
   ]
   return (
