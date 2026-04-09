@@ -16,8 +16,6 @@ export default async function CounterSection({ locale }: CounterSectionProps) {
     <section id='stats' className="w-full bg-[#E9EFF4] py-10 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr,2fr] lg:gap-24 items-start">
-          
-   
           <div className="max-w-[380px]">           
             <p className="text-[18px] font-medium leading-relaxed text-[#081521]/70">
               {t('trustedBy')}

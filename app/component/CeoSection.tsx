@@ -3,7 +3,6 @@ import { CheckCircle2 } from "lucide-react";
 
 export default async function CEOSection({ locale }: { locale: string }) {
     const t = await getTranslations({ locale, namespace: 'Index.ceo' });
-
     const milestones = [
         t('milestones.0'),
         t('milestones.1'),

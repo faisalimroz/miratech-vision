@@ -65,38 +65,18 @@
     "login": "Login"
   },
 
- "Products": {
-    "detection-system": {
-      "main_title": "Integrated Detection & Identification System",
-      "components": {
-        "sdr-scanner": {
-          "title": "RF Scanner (SDR)",
-          "image": "/products/sdr-unit.webp",
-          "specs": {
-            "Frequency": "400MHz - 6GHz",
-            "Range": "3km+",
-            "Updates": "Bi-Annual Library"
-          }
-        },
-        "surveillance-radar": {
-          "title": "Surveillance Radar",
-          "image": "/products/radar-unit.webp",
-          "specs": {
-            "Coverage": "360° Omnidirectional",
-            "Sensitivity": "RCS 0.01m²",
-            "Detection": "3.5km (Track 6km)"
-          }
-        },
-        "eoir-camera": {
-          "title": "EO/IR Camera",
-          "image": "/products/eoir-unit.webp",
-          "specs": {
-            "Visual_Range": "2km",
-            "AI_Logic": "Deep Learning ID",
-            "Tracking": "Auto Path Prediction"
-          }
-        }
-      }
+ 
+"Products": {
+  "header": "Our Drone Solutions",
+    "description": "Explore our comprehensive range of cutting-edge anti-drone products, designed to provide robust defense against evolving aerial threats. ",
+    "detection-identification-equipment": {
+      "title": "Detection / Identification Equipment"
+    },
+    "neutralization-equipment": {
+      "title": "Neutralization Equipment"
+    },
+    "normalization-equipment": {
+      "title": "Normalization Equipment"
     }
   },
   "NotFound": {

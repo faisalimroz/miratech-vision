@@ -68,14 +68,10 @@ const navItems = [
           {/* LEFT: Logo */}
           <div className="flex shrink-0 items-center">
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-[4px] bg-[#f68b1f]">
-                <span className="text-[20px] font-black italic leading-none text-[#081521]">
-                  D
-                </span>
-              </div>
+              
 
               <div className="flex items-center">
-                <span className="text-[19px] font-semibold uppercase tracking-[0.06em] text-white">
+                <span className="text-[19px] italic font-semibold text-[#f68b1f] uppercase tracking-[0.06em] ">
                  {t('logo')}
                 </span>
               </div>
@@ -171,13 +167,11 @@ const navItems = [
           {/* Top bar */}
           <div className="flex items-center justify-between border-b border-white/15 px-6 py-5">
             <Link href="/" className="flex items-center gap-3" onClick={closeMobileMenu}>
-              <div className="flex h-8 w-8 items-center justify-center rounded-[3px] bg-[#f68b1f]">
-                <span className="text-[15px] font-black italic leading-none text-[#081521]">
-                  D
-                </span>
+              <div className="flex h-8 w-8 items-center italic justify-center rounded-[3px] bg-[#f68b1f]">
+                
               </div>
 
-              <span className="text-[15px] font-semibold uppercase tracking-[0.08em] text-white">
+              <span className="text-[15px] font-semibold uppercase tracking-[0.08em] text-[#f68b1f]">
                 DRONESHIELD
               </span>
             </Link>

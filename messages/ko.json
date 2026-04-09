@@ -66,31 +66,17 @@
   },
 
 
-  "Products": {
-    "sdr-sentinel-v3": {
-      "title": "SDR 센티넬 V3",
-      "category": "신호 인텔리전스",
-      "description": "실시간 프로토콜 해독 및 자율적 위협 식별을 위한 엔터프라이즈급 SDR 플랫폼입니다.",
-      "features": {
-        "f1_title": "방어 프로토콜",
-        "f1_desc": "군용 등급 암호화 및 자율 대응 로직이 통합되었습니다.",
-        "f2_title": "정밀 추적",
-        "f2_desc": "위협을 구분하기 위한 고급 RF 시그니처 분석을 활용합니다.",
-        "f3_title": "신속한 배치",
-        "f3_desc": "300초 이내에 보안 구역을 설정할 수 있는 제로 구성 설정입니다."
-      },
-      "spec_labels": {
-        "range": "운용 반경",
-        "freq": "주파수 대역",
-        "update": "라이브러리 업데이트",
-        "power": "전원 입력"
-      },
-      "specs": {
-        "range": "3km 이상",
-        "freq": "400MHz - 6GHz",
-        "update": "연 2회",
-        "power": "24V DC"
-      }
+"Products": {
+  "header": "우리의 드론 솔루션",
+    "description": "최첨단 안티드론 제품의 종합적인 라인업을 살펴보세요. 진화하는 공중 위협으로부터 강력한 방어를 제공하도록 설계되었습니다.",
+    "detection-identification-equipment": {
+      "title": "탐지 및 식별 장비"
+    },
+    "neutralization-equipment": {
+      "title": "드론 무력화 장비"
+    },
+    "normalization-equipment": {
+      "title": "드론 정상화 장비"
     }
   }
 
