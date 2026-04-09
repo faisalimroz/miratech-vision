@@ -64,8 +64,6 @@
   "Auth": {
     "login": "Login"
   },
-
- 
 "Products": {
   "header": "Our Drone Solutions",
     "description": "Explore our comprehensive range of cutting-edge anti-drone products, designed to provide robust defense against evolving aerial threats. ",
@@ -143,8 +141,7 @@
         }
       ]
     }
-    }
-  ,
+    },
   "NotFound": {
     "title": "404 - Page Not Found",
     "message": "The product or page you are looking for does not exist.",

@@ -3,20 +3,14 @@ import { NextIntlClientProvider } from 'next-intl';
 import Image from 'next/image';
 import { Cpu } from 'lucide-react';
 import ProductImageGallery from '@/app/component/products/product-card';
-
-/**
- * CORE FUNCTIONALITY FOR STATIC EXPORT
- * This tells Next.js exactly which pages to generate at build time.
- */ export const dynamic = 'force-dynamic';
+export const dynamic = 'force-static';
 export async function generateStaticParams() {
   const locales = ['en', 'ko'];
   const slugs = [
     'detection-identification-equipment',
     'neutralization-equipment',
-    'normalization-equipment',
     'spoofing-equipment'
   ];
-
   return locales.flatMap((locale) =>
     slugs.map((slug) => ({
       locale,
@@ -24,7 +18,6 @@ export async function generateStaticParams() {
     }))
   );
 }
-
 export default async function ProductDetailsPage({ 
   params 
 }: { 
@@ -33,25 +26,16 @@ export default async function ProductDetailsPage({
   const { locale, slug } = await params;
   const messages = await getMessages({ locale });
   const t = await getTranslations({ locale, namespace: 'Products' });
-
   const productTitle = t(`${slug}.title`);
-  
-  // Core Change: Safely handle raw data retrieval for static generation
-  let componentList = [];
-  try {
-    componentList = t.raw(`${slug}.component_list`);
-  } catch (e) {
-    console.error(`Missing component_list for slug: ${slug}`);
-  }
-
+  const listKey = `${slug}.component_list`;
+  const rawData = t.has(listKey) ? t.raw(listKey) : [];
+  const componentList = Array.isArray(rawData) ? rawData : [];
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
       <main className="bg-[#0a1219] min-h-screen text-white pb-20">
-        
-        {/* SECTION 1: HERO BANNER */}
         <section className="relative h-[35vh] w-full flex items-center justify-center overflow-hidden border-b border-white/10">
           <div className="absolute inset-0 opacity-15 grayscale">
-            <Image src="/drone.webp" alt="Banner" fill className="object-cover" />
+            <Image src="/drone.webp" alt="Banner" fill className="object-cover" priority />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a1219] via-transparent to-transparent" />
           
@@ -64,34 +48,29 @@ export default async function ProductDetailsPage({
             </h1>
           </div>
         </section>
-
-        {/* SECTION 2: PRODUCT DETAILS CARD */}
         <section className="max-w-[1440px] mx-auto px-6 lg:px-12 -mt-12 relative z-20">
           <div className="bg-[#0f1a24] border border-white/10 rounded-[2.5rem] overflow-hidden shadow-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-12">
-              
-              {/* LEFT: Dynamic Multi-Image Gallery */}
               <div className="lg:col-span-5 border-r border-white/5 bg-black/20">
-                {componentList.length > 0 && (
+                {componentList.length > 0 ? (
                    <ProductImageGallery 
                     components={componentList} 
                     productTitle={productTitle} 
                   />
+                ) : (
+                  <div className="flex items-center justify-center h-64 text-white/20">No Images Available</div>
                 )}
               </div>
-
-              {/* RIGHT: Mapping Specs */}
               <div className="lg:col-span-7 p-8 lg:p-16 space-y-10">
                 <div>
                   <h2 className="text-3xl font-black text-white uppercase tracking-tight mb-2">
                     {t(`${slug}.main_title`)}
                   </h2>
                   <div className="h-1 w-24 bg-gradient-to-r from-[#f68b1f] to-transparent" />
-                </div>
-                
+                </div>               
                 <div className="grid grid-cols-1 gap-6">
-                  {componentList.map((comp: any) => (
-                    <div key={comp.id} className="group p-8 bg-white/5 border border-white/5 rounded-3xl hover:bg-white/[0.07] transition-all duration-300">
+                  {componentList.map((comp: any, index: number) => (
+                    <div key={comp.id || index} className="group p-8 bg-white/5 border border-white/5 rounded-3xl hover:bg-white/[0.07] transition-all duration-300">
                       <div className="flex items-start gap-6">
                         <div className="p-3 bg-[#f68b1f]/10 rounded-2xl text-[#f68b1f] group-hover:scale-110 transition-transform">
                           <Cpu size={24} />
@@ -116,10 +95,6 @@ export default async function ProductDetailsPage({
                     </div>
                   ))}
                 </div>
-
-                <button className="group flex items-center justify-center gap-3 w-full py-6 bg-[#f68b1f] text-black font-black uppercase tracking-[0.2em] rounded-2xl hover:bg-white transition-all duration-500 active:scale-95">
-                   Inquire Technical Details
-                </button>
               </div>
             </div>
           </div>

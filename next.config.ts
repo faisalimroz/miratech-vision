@@ -3,10 +3,10 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
-const nextConfig: NextConfig = { // Explicitly type the config
-
+const nextConfig: NextConfig = { 
+output: 'export',
   images: {
-    unoptimized: true, // Usually required for static exports
+    unoptimized: true, 
   },
 };
 

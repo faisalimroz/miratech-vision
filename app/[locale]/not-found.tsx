@@ -6,33 +6,33 @@ import Link from 'next/link';
 
 export default function NotFound() {
   const params = useParams();
-  const locale = params?.locale || 'en';
+  const locale = params?.locale as string || 'en';
   const t = useTranslations('NotFound');
-  
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0a1219] text-white">
-      <div className="relative mb-12 animate-pulse">
-        <h1 className="text-[10rem] md:text-[15rem] font-black text-white/5 leading-none">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0a1219] text-white px-6">
+      <div className="relative mb-12">
+        <h1 className="text-[120px] md:text-[180px] font-black text-white/5 leading-none select-none">
           404
         </h1>
         <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-widest text-[#f68b1f]">
+          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-[0.1em] text-[#f68b1f]">
             {t('title')}
           </h2>
         </div>
       </div>
 
-      <p className="text-slate-400 text-center max-w-md px-6 mb-12 text-lg font-light">
+      <p className="text-slate-400 text-center max-w-md mb-12 text-lg leading-relaxed">
         {t('message')}
       </p>
 
-   
       <Link 
         href={`/${locale}`}
-        className="group relative px-12 py-4 bg-white text-black font-black uppercase tracking-[0.2em] transition-all hover:bg-[#f68b1f] hover:text-white"
+        className="group relative px-10 py-4 bg-white text-black font-black uppercase tracking-[0.15em] 
+                   transition-all duration-300 hover:bg-[#f68b1f] hover:text-white rounded-xl overflow-hidden"
       >
         <span className="relative z-10">{t('button')}</span>
-        <div className="absolute inset-0 bg-[#f68b1f] scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+        <div className="absolute inset-0 bg-[#f68b1f] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
       </Link>
     </div>
   );
